@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author dwsrh
+ *
+ */
+module PracticalAlgorithm {
+}
