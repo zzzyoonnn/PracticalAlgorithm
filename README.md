@@ -1,7 +1,7 @@
 # Practical Algorithm
 
-[바킹독의 실전 알고리즘]을 들으며 공부한 레파지토리 입니다.
-영상 링크 : <>
+[바킹독의 실전 알고리즘]을 들으며 공부한 레파지토리 입니다.<br>
+영상 링크 : <https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY>
 
 ### 0x02 기초 코드 작성 요령
 
