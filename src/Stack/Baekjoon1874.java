@@ -63,23 +63,25 @@ public class Baekjoon1874 {
     StringBuilder sb = new StringBuilder();
     int n = sc.nextInt();
     Stack<Integer> stack = new Stack<>();
-    int start = 0;
+    int start = 1;
+    boolean check = true;
 
     while (n-- > 0) {
-      int num = sc.nextInt();
-      if (num > start) {
-        for (int i = start + 1; i <= num; i++) {
+      int m = sc.nextInt();
+      if (m >= start) {
+        for (int i = start; i <= m; i++) {
           stack.push(i);
           sb.append('+').append('\n');
         }
-        start = num;
-      } else if (stack.peek() != num){
-        System.out.println("NO");
-        return;     // System.exit(0)과 동일
+        start = m + 1;
+      } else if (stack.peek() != m){
+        check = false;
+        break;
       }
       stack.pop();
       sb.append('-').append('\n');
     }
-    System.out.println(sb);
+    if (check) System.out.println(sb);
+    else System.out.println("NO");
   }
 }
